@@ -1,5 +1,25 @@
 package view;
 
+/* 
+ * java.awt.EventQueue - Pacote necessário para agendar e gerenciar eventos da interface gráfica.
+ * java.awt.Font - Pacote para manipular e configurar diferentes fontes de texto na interface gráfica.
+ * java.awt.event.ActionEvent - Pacote para tratar eventos de ações do usuário, como cliques de botão.
+ * java.awt.event.ActionListener - Interface que permite a implementação de classes que reagem a eventos de ação.
+ * java.util.ArrayList - Pacote para trabalhar com listas dinâmicas de objetos.
+ * javax.swing.JButton - Pacote para criar botões na interface gráfica.
+ * javax.swing.JComboBox - Pacote para criar caixas de seleção suspensas na interface gráfica.
+ * javax.swing.JFrame - Pacote para criar a janela principal da interface gráfica.
+ * javax.swing.JLabel - Pacote para criar rótulos de texto na interface gráfica.
+ * javax.swing.JOptionPane - Pacote para exibir caixas de diálogo para mensagens e interações com o usuário.
+ * javax.swing.JScrollPane - Pacote para adicionar barras de rolagem a componentes da interface.
+ * javax.swing.JTable - Pacote para criar tabelas para exibição de dados tabulares.
+ * javax.swing.table.DefaultTableModel - Pacote para definir o modelo de dados para tabelas.
+ * javax.swing.JSeparator - Pacote para inserir separadores visuais horizontais e verticais.
+ * javax.swing.SwingConstants - Pacote para definir alinhamento e posicionamento de componentes em layouts.
+ * model.aluno - Importa a classe personalizada 'aluno' do pacote 'model', representando a entidade 'aluno'.
+ * ExemploGUI - Classe principal que implementa uma interface gráfica para manipular e exibir dados relacionados.
+ */
+
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -87,6 +107,7 @@ public class ParticipanteGUI extends JFrame {
         frame = new JFrame("Cadastro de Participantes");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(755, 475);
+        frame.setLocationRelativeTo(null); 
 
         String[] columnNames = { "Index", "Nome", "Matrícula", "Curso", "Evento" };
         Object[][] data = {};
