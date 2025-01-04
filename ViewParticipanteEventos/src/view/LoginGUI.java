@@ -1,5 +1,17 @@
 package view;
 
+/* 
+ * java.awt.EventQueue - Pacote necessário para agendar e gerenciar eventos da interface gráfica.
+ * java.awt.Font - Pacote para manipular e configurar diferentes fontes de texto na interface gráfica.
+ * java.awt.event.ActionEvent - Pacote para tratar eventos de ações do usuário, como cliques de botão.
+ * java.awt.event.ActionListener - Interface que permite a implementação de classes que reagem a eventos de ação.
+ * javax.swing.JButton - Pacote para criar botões na interface gráfica.
+ * javax.swing.JFrame - Pacote para criar a janela principal da interface gráfica.
+ * javax.swing.JLabel - Pacote para criar rótulos de texto na interface gráfica.
+ * javax.swing.JOptionPane - Pacote para exibir caixas de diálogo para mensagens e interações com o usuário.
+ * javax.swing.JTextField - Pacote para criar campos de texto de entrada.
+ */
+
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -101,6 +113,7 @@ public class LoginGUI extends JFrame {
         setBounds(100, 100, 450, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
+	setLocationRelativeTo(null); 
 
         JLabel senhaLabel = new JLabel("Senha");
         senhaLabel.setFont(new Font("Times New Roman", Font.BOLD, 23));
